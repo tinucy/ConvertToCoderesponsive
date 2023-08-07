@@ -534,4 +534,74 @@ h1 {
   .nav__hamburger {
     display: none;
   }
+}
+
+.hero {
+  margin-top: 80rem;
+  margin-left: 20rem;
+}
+.hero__focalText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hero__focalText__h2 {
+  background-color: var(--elated);
+  font-family: "Inter SemiBold";
+  border-radius: 15rem;
+  padding: 10rem 5rem;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  font-size: 10rem;
+}
+.hero__focalText__p {
+  padding: 30rem 5rem;
+  font-family: "Rasa Bold";
+  font-size: 50rem;
+}
+.hero__focalText__p span {
+  color: var(--light);
+}
+.hero__focalText__p2 {
+  font-family: "inter Medium";
+  font-size: 16rem;
+  color: var(--joy);
+}
+.hero__focalText .but {
+  margin-top: 40rem;
+}
+.hero__focalText .but .but1 {
+  border: 2rem solid var(--skills);
+  border-radius: 5rem;
+  box-shadow: 2rem 2rem 2rem var(--skills);
+  background-color: var(--excited);
+  padding: 10rem 20rem;
+}
+.hero__focalText .but .but2 {
+  border: 2rem solid var(--skills);
+  border-radius: 5rem;
+  box-shadow: 2rem 2rem 2rem var(--skills);
+  background-color: var(--elated);
+  margin-left: 40rem;
+  padding: 10rem 20rem;
+}
+.hero__focalText .stats {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+.hero__focalText .stats__1 {
+  display: flex;
+  gap: 5rem;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+.hero__focalText .stats__1__a {
+  font-family: "Rasa Bold";
+  font-size: 30rem;
+}
+.hero__focalText .stats__1__b {
+  font-family: "Inter Medium";
+  color: var(--joy);
+  font-size: 12rem;
 }/*# sourceMappingURL=main.css.map */
