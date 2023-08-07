@@ -443,33 +443,32 @@ h1 {
 
 .nav {
   display: grid;
-  grid-template-columns: min-content 1fr max-content;
+  grid-template-columns: 0.5fr min-content 1fr min-content 0.5fr;
   grid-template-rows: repeat(2, min-content);
-  margin-top: 30rem;
+  margin: 30rem;
 }
 .nav__lblock {
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
   align-items: center;
-  padding: 12rem;
 }
 .nav__FinLogo {
   display: none;
 }
 .nav .but {
   grid-row: 1/2;
-  grid-column: 3/4;
-  margin: 20rem;
+  grid-column: 4/5;
+  margin: 10rem;
   background-color: var(--elated);
   font-family: "Inter Bold";
-  color: var(--skills);
-  border: 2rem solid;
-  box-shadow: 4rem 4rem 3rem var(--skills);
-  margin-right: 20rem;
+  border: 2rem solid var(--skills);
+  box-shadow: 2rem 2rem var(--skills);
   border-radius: 5rem;
-  padding: 10rem 10rem;
-  font-size: 12rem;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0 5rem;
+  font-size: 9rem;
 }
 .nav__dropl {
   grid-row: 2/3;
@@ -536,11 +535,8 @@ h1 {
   }
 }
 
-.hero {
-  margin-top: 80rem;
-  margin-left: 20rem;
-}
 .hero__focalText {
+  margin: 40rem 40rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -549,23 +545,26 @@ h1 {
   background-color: var(--elated);
   font-family: "Inter SemiBold";
   border-radius: 15rem;
-  padding: 10rem 5rem;
+  padding: 7rem 5rem;
   max-width: -moz-max-content;
   max-width: max-content;
   font-size: 10rem;
 }
 .hero__focalText__p {
-  padding: 30rem 5rem;
+  padding: 10rem 5rem;
   font-family: "Rasa Bold";
-  font-size: 50rem;
+  font-size: 40rem;
 }
 .hero__focalText__p span {
   color: var(--light);
 }
 .hero__focalText__p2 {
-  font-family: "inter Medium";
-  font-size: 16rem;
+  font-family: "Inter Medium";
+  font-size: 12rem;
   color: var(--joy);
+}
+.hero__focalText__p2a {
+  display: none;
 }
 .hero__focalText .but {
   margin-top: 40rem;
@@ -573,16 +572,16 @@ h1 {
 .hero__focalText .but .but1 {
   border: 2rem solid var(--skills);
   border-radius: 5rem;
-  box-shadow: 2rem 2rem 2rem var(--skills);
+  box-shadow: 2rem 2rem var(--skills);
   background-color: var(--excited);
   padding: 10rem 20rem;
 }
 .hero__focalText .but .but2 {
   border: 2rem solid var(--skills);
   border-radius: 5rem;
-  box-shadow: 2rem 2rem 2rem var(--skills);
+  box-shadow: 2rem 2rem var(--skills);
   background-color: var(--elated);
-  margin-left: 40rem;
+  margin-left: 30rem;
   padding: 10rem 20rem;
 }
 .hero__focalText .stats {
@@ -598,10 +597,89 @@ h1 {
 }
 .hero__focalText .stats__1__a {
   font-family: "Rasa Bold";
-  font-size: 30rem;
+  font-size: 20rem;
 }
 .hero__focalText .stats__1__b {
   font-family: "Inter Medium";
   color: var(--joy);
-  font-size: 12rem;
+  font-size: 10rem;
+}
+.hero__image {
+  margin-top: 30rem;
+}
+.hero__image__img {
+  border: 2rem solid var(--skills);
+  border-radius: 10rem;
+  box-shadow: 4rem 4rem var(--skills);
+  margin-left: 30rem;
+}
+.hero__image__img2 {
+  display: none;
+}
+.hero__image__but {
+  font-family: "Rasa Bold";
+  border: 2rem solid;
+  box-shadow: 2rem 2rem var(--skills);
+  border-radius: 5rem;
+  background-color: var(--elated);
+  padding: 5rem 6rem;
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  transform: translate(-290rem, 200rem);
+}
+@media (min-width: 767px) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150rem;
+    margin-right: 210rem;
+  }
+  .hero .hero__focalText__h2 {
+    background-color: var(--elated);
+    font-family: "Inter SemiBold";
+    border-radius: 20rem;
+    padding: 8rem 15rem;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    font-size: 15rem;
+  }
+  .hero .hero__focalText__p {
+    font-family: "Rasa Bold";
+    font-size: 60rem;
+  }
+  .hero .hero__focalText__p span {
+    color: var(--light);
+  }
+  .hero .hero__focalText__p2 {
+    display: none;
+  }
+  .hero .hero__focalText__p2a {
+    display: unset;
+    font-family: "Inter Medium";
+    font-size: 16rem;
+    color: var(--joy);
+  }
+  .hero .hero__image__img {
+    display: none;
+  }
+  .hero .hero__image__img2 {
+    display: unset;
+    box-shadow: 2rem 2rem 3rem 3rem var(--skills);
+    border-radius: 7rem;
+  }
+  .hero .hero__image__but {
+    font-family: "Rasa Bold";
+    border: 2rem solid;
+    box-shadow: 4rem 4rem var(--skills);
+    border-radius: 5rem;
+    background-color: var(--elated);
+    padding: 7rem 15rem;
+    position: absolute;
+    width: -moz-max-content;
+    width: max-content;
+    font-size: 30rem;
+    transform: translate(-600rem, 400rem);
+  }
 }/*# sourceMappingURL=main.css.map */
