@@ -1,24 +1,24 @@
-// .card__scheme {
-//   &--small {
-//     margin-top: 30rem;
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-evenly;
-//     background-color: var(--excited);
-//   }
+.card__scheme {
+  &--small {
+    margin-top: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--excited);
+  }
 
-//   @include respond-to("small") {
-//     &--big {
-//       display: unset;
-//       margin-top: 30rem;
-//       display: flex;
-//       align-items: center;
-//       justify-content: space-evenly;
-//       background-color: var(--excited);
-//     }
+  @include respond-to("small") {
+    &--big {
+      display: unset;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background-color: var(--excited);
+      padding: 0 40rem;
+    }
 
-//     &--small {
-//       display: none;
-//     }
-//   }
-// }
+    &--small {
+      display: none;
+    }
+  }
+}
