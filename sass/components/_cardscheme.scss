@@ -1,0 +1,24 @@
+// .card__scheme {
+//   &--small {
+//     margin-top: 30rem;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     background-color: var(--excited);
+//   }
+
+//   @include respond-to("small") {
+//     &--big {
+//       display: unset;
+//       margin-top: 30rem;
+//       display: flex;
+//       align-items: center;
+//       justify-content: space-evenly;
+//       background-color: var(--excited);
+//     }
+
+//     &--small {
+//       display: none;
+//     }
+//   }
+// }

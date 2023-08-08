@@ -1,9 +1,8 @@
 .hero {
   &__focalText {
-    margin: 40rem 40rem;
+    margin: 40rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 
     &__h2 {
       background-color: var(--elated);
@@ -15,7 +14,7 @@
     }
 
     &__p {
-      padding: 10rem 5rem;
+      padding: 10rem 0rem;
       font-family: "Rasa Bold";
       font-size: 40rem;
 
@@ -36,23 +35,26 @@
 
     .but {
       margin-top: 40rem;
+      font-family: "Inter Bold";
 
       .but1 {
         border: 2rem solid var(--skills);
         border-radius: 5rem;
         box-shadow: 2rem 2rem var(--skills);
         background-color: var(--excited);
-        padding: 10rem 20rem;
+        padding: 10rem 15rem;
       }
+
       .but2 {
         border: 2rem solid var(--skills);
         border-radius: 5rem;
         box-shadow: 2rem 2rem var(--skills);
         background-color: var(--elated);
-        margin-left: 30rem;
-        padding: 10rem 20rem;
+        margin-left: 15rem;
+        padding: 10rem 15rem;
       }
     }
+
     .stats {
       margin-top: 30rem;
       display: flex;
@@ -61,7 +63,7 @@
       &__1 {
         display: flex;
         gap: 5rem;
-        max-width: fit-content;
+        max-width: min-content;
 
         &__a {
           font-family: "Rasa Bold";
@@ -78,13 +80,13 @@
   }
 
   &__image {
-    margin-top: 30rem;
+    margin: 30rem;
 
     &__img {
       border: 2rem solid var(--skills);
       border-radius: 10rem;
       box-shadow: 4rem 4rem var(--skills);
-      margin-left: 30rem;
+      margin-left: 25rem;
     }
 
     &__img2 {
@@ -101,35 +103,26 @@
       position: absolute;
       width: max-content;
 
-      transform: translate(-290rem, 200rem);
+      transform: translate(-290rem, 250rem);
     }
   }
 
   @include respond-to("small") {
     display: flex;
+    margin: 60rem 120rem;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 150rem;
-    margin-right: 210rem;
 
     .hero {
       &__focalText {
         &__h2 {
-          background-color: var(--elated);
-          font-family: "Inter SemiBold";
           border-radius: 20rem;
-          padding: 8rem 15rem;
-          max-width: max-content;
           font-size: 15rem;
+          padding: 7rem 15rem;
+          max-width: max-content;
         }
 
         &__p {
-          font-family: "Rasa Bold";
           font-size: 60rem;
-
-          span {
-            color: var(--light);
-          }
         }
 
         &__p2 {
@@ -142,6 +135,42 @@
           font-size: 16rem;
           color: var(--joy);
         }
+
+        .but {
+          margin-top: 50rem;
+          font-size: 20rem;
+
+          .but1 {
+            border-radius: 10rem;
+            box-shadow: 4rem 3rem var(--skills);
+            padding: 18rem 23rem;
+          }
+
+          .but2 {
+            border-radius: 10rem;
+            box-shadow: 4rem 3rem var(--skills);
+            margin-left: 50rem;
+            padding: 18rem 23rem;
+          }
+        }
+
+        .stats {
+          margin-top: 50rem;
+          justify-content: flex-start;
+          gap: 40rem;
+          &__1 {
+            gap: 10rem;
+            align-items: center;
+
+            &__a {
+              font-size: 40rem;
+            }
+
+            &__b {
+              font-size: 12rem;
+            }
+          }
+        }
       }
 
       &__image {
@@ -150,70 +179,22 @@
         }
 
         &__img2 {
+          flex-shrink: 4;
           display: unset;
-          box-shadow: 2rem 2rem 3rem 3rem var(--skills);
-          border-radius: 7rem;
+          border: 2rem solid var(--skills);
+          box-shadow: 4rem 4rem var(--skills);
+          border-radius: 10rem;
         }
 
         &__but {
-          font-family: "Rasa Bold";
-          border: 2rem solid;
           box-shadow: 4rem 4rem var(--skills);
-          border-radius: 5rem;
+          border-radius: 10rem;
           background-color: var(--elated);
-          padding: 7rem 15rem;
-          position: absolute;
-          width: max-content;
+          padding: 10rem 20rem;
           font-size: 30rem;
           transform: translate(-600rem, 400rem);
         }
       }
-
-      // .but {
-      //   margin-top: 40rem;
-
-      //   .but1 {
-      //     border: 2rem solid var(--skills);
-      //     background-color: var(--excited);
-      //     box-shadow: 3rem 3rem var(--skills);
-      //     border-radius: 5rem;
-      //     padding: 10rem 20rem;
-      //     font-size: 25rem;
-      //   }
-
-      //   .but2 {
-      //     border: 4rem solid var(--skills);
-      //     background-color: var(--elated);
-      //     margin-left: 30rem;
-      //     box-shadow: 3rem 3rem var(--skills);
-      //     border-radius: 5rem;
-      //     padding: 10rem 20rem;
-      //     font-size: 25rem;
-      //   }
-      // }
-
-      // .stats {
-      //   margin-top: 30rem;
-      //   display: flex;
-      //   justify-content: space-between;
-
-      //   &__1 {
-      //     display: flex;
-      //     gap: 8rem;
-      //     max-width: fit-content;
-
-      //     &__a {
-      //       font-family: "Rasa Bold";
-      //       font-size: 25rem;
-      //     }
-
-      //     &__b {
-      //       font-family: "Inter Medium";
-      //       color: var(--joy);
-      //       font-size: 10rem;
-      //     }
-      //   }
-      // }
     }
   }
 }

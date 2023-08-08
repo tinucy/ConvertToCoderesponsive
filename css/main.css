@@ -443,15 +443,15 @@ h1 {
 
 .nav {
   display: grid;
-  grid-template-columns: 0.5fr min-content 1fr min-content 0.5fr;
+  grid-template-columns: 0.5fr min-content max-content fit-content 0.5fr;
   grid-template-rows: repeat(2, min-content);
-  margin: 30rem;
 }
 .nav__lblock {
   grid-row: 1/2;
   grid-column: 1/2;
   display: flex;
   align-items: center;
+  margin-left: 15rem;
 }
 .nav__FinLogo {
   display: none;
@@ -459,20 +459,17 @@ h1 {
 .nav .but {
   grid-row: 1/2;
   grid-column: 4/5;
-  margin: 10rem;
   background-color: var(--elated);
   font-family: "Inter Bold";
   border: 2rem solid var(--skills);
   box-shadow: 2rem 2rem var(--skills);
   border-radius: 5rem;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 0 5rem;
+  margin: 10rem 20rem;
   font-size: 9rem;
 }
 .nav__dropl {
   grid-row: 2/3;
-  grid-column: 1/-1;
+  grid-column: 1/5;
   display: none;
 }
 .nav__logo {
@@ -489,33 +486,28 @@ h1 {
 }
 .nav__toggle:checked ~ .nav__dropl li {
   padding: 15rem 10rem;
-  border-bottom: 1px var(--skills) solid;
+  border-bottom: 2px var(--skills) solid;
 }
 @media (min-width: 767px) {
   .nav {
-    grid-template-columns: 0.5fr min-content 2.5fr max-content 0.5fr;
+    grid-template-columns: 0.5fr min-content 3fr max-content 0.5fr;
   }
   .nav__lblock {
-    grid-row: 1/2;
     grid-column: 2/3;
   }
   .nav .but {
-    grid-row: 1/2;
-    grid-column: 4/5;
-    background-color: var(--elated);
-    font-family: "Inter Bold";
-    color: var(--skills);
-    border-color: var(--skills);
-    margin-right: 20rem;
     border-radius: 9rem;
-    padding: 20rem 25rem;
+    padding: 15rem 25rem;
     font-size: 20rem;
+    box-shadow: 3rem 4rem var(--skills);
+    margin: 0;
   }
   .nav__dropdown--Home {
     font-family: "Rasa Bold";
   }
   .nav__logo {
     font-size: 25rem;
+    margin-left: 7rem;
   }
   .nav__dropl {
     grid-row: 1/2;
@@ -529,6 +521,7 @@ h1 {
   }
   .nav__FinLogo {
     display: unset;
+    margin-right: 10rem;
   }
   .nav__hamburger {
     display: none;
@@ -536,10 +529,9 @@ h1 {
 }
 
 .hero__focalText {
-  margin: 40rem 40rem;
+  margin: 40rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 .hero__focalText__h2 {
   background-color: var(--elated);
@@ -551,7 +543,7 @@ h1 {
   font-size: 10rem;
 }
 .hero__focalText__p {
-  padding: 10rem 5rem;
+  padding: 10rem 0rem;
   font-family: "Rasa Bold";
   font-size: 40rem;
 }
@@ -568,21 +560,22 @@ h1 {
 }
 .hero__focalText .but {
   margin-top: 40rem;
+  font-family: "Inter Bold";
 }
 .hero__focalText .but .but1 {
   border: 2rem solid var(--skills);
   border-radius: 5rem;
   box-shadow: 2rem 2rem var(--skills);
   background-color: var(--excited);
-  padding: 10rem 20rem;
+  padding: 10rem 15rem;
 }
 .hero__focalText .but .but2 {
   border: 2rem solid var(--skills);
   border-radius: 5rem;
   box-shadow: 2rem 2rem var(--skills);
   background-color: var(--elated);
-  margin-left: 30rem;
-  padding: 10rem 20rem;
+  margin-left: 15rem;
+  padding: 10rem 15rem;
 }
 .hero__focalText .stats {
   margin-top: 30rem;
@@ -592,8 +585,8 @@ h1 {
 .hero__focalText .stats__1 {
   display: flex;
   gap: 5rem;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
 }
 .hero__focalText .stats__1__a {
   font-family: "Rasa Bold";
@@ -605,13 +598,13 @@ h1 {
   font-size: 10rem;
 }
 .hero__image {
-  margin-top: 30rem;
+  margin: 30rem;
 }
 .hero__image__img {
   border: 2rem solid var(--skills);
   border-radius: 10rem;
   box-shadow: 4rem 4rem var(--skills);
-  margin-left: 30rem;
+  margin-left: 25rem;
 }
 .hero__image__img2 {
   display: none;
@@ -626,31 +619,23 @@ h1 {
   position: absolute;
   width: -moz-max-content;
   width: max-content;
-  transform: translate(-290rem, 200rem);
+  transform: translate(-290rem, 250rem);
 }
 @media (min-width: 767px) {
   .hero {
     display: flex;
+    margin: 60rem 120rem;
     justify-content: space-between;
-    align-items: center;
-    margin-left: 150rem;
-    margin-right: 210rem;
   }
   .hero .hero__focalText__h2 {
-    background-color: var(--elated);
-    font-family: "Inter SemiBold";
     border-radius: 20rem;
-    padding: 8rem 15rem;
+    font-size: 15rem;
+    padding: 7rem 15rem;
     max-width: -moz-max-content;
     max-width: max-content;
-    font-size: 15rem;
   }
   .hero .hero__focalText__p {
-    font-family: "Rasa Bold";
     font-size: 60rem;
-  }
-  .hero .hero__focalText__p span {
-    color: var(--light);
   }
   .hero .hero__focalText__p2 {
     display: none;
@@ -661,25 +646,64 @@ h1 {
     font-size: 16rem;
     color: var(--joy);
   }
+  .hero .hero__focalText .but {
+    margin-top: 50rem;
+    font-size: 20rem;
+  }
+  .hero .hero__focalText .but .but1 {
+    border-radius: 10rem;
+    box-shadow: 4rem 3rem var(--skills);
+    padding: 18rem 23rem;
+  }
+  .hero .hero__focalText .but .but2 {
+    border-radius: 10rem;
+    box-shadow: 4rem 3rem var(--skills);
+    margin-left: 50rem;
+    padding: 18rem 23rem;
+  }
+  .hero .hero__focalText .stats {
+    margin-top: 50rem;
+    justify-content: flex-start;
+    gap: 40rem;
+  }
+  .hero .hero__focalText .stats__1 {
+    gap: 10rem;
+    align-items: center;
+  }
+  .hero .hero__focalText .stats__1__a {
+    font-size: 40rem;
+  }
+  .hero .hero__focalText .stats__1__b {
+    font-size: 12rem;
+  }
   .hero .hero__image__img {
     display: none;
   }
   .hero .hero__image__img2 {
+    flex-shrink: 4;
     display: unset;
-    box-shadow: 2rem 2rem 3rem 3rem var(--skills);
-    border-radius: 7rem;
+    border: 2rem solid var(--skills);
+    box-shadow: 4rem 4rem var(--skills);
+    border-radius: 10rem;
   }
   .hero .hero__image__but {
-    font-family: "Rasa Bold";
-    border: 2rem solid;
     box-shadow: 4rem 4rem var(--skills);
-    border-radius: 5rem;
+    border-radius: 10rem;
     background-color: var(--elated);
-    padding: 7rem 15rem;
-    position: absolute;
-    width: -moz-max-content;
-    width: max-content;
+    padding: 10rem 20rem;
     font-size: 30rem;
     transform: translate(-600rem, 400rem);
+  }
+}
+
+.container {
+  max-width: 895rem;
+  margin: 50rem auto;
+  padding: 0;
+  background-color: salmon;
+}
+@media (min-width: 767px) {
+  .container {
+    max-width: 1500rem;
   }
 }/*# sourceMappingURL=main.css.map */
