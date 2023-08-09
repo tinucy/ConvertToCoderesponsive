@@ -3,20 +3,23 @@
   flex-direction: column;
   margin: 40rem 0rem;
   background-color: var(--skills);
-  color: var(--best);
 
   &__child1 {
     margin: 40rem 40rem;
+    color: var(--best);
     h1 {
       font-family: "Rasa Bold";
       font-size: 25rem;
-      color: var(--best);
     }
 
     p {
       font-family: "Inter Medium";
       font-size: 12rem;
       margin: 20rem 0;
+
+      br {
+        display: none;
+      }
     }
 
     button {
@@ -25,6 +28,7 @@
       border-radius: 8rem;
       padding: 8rem 15rem;
       margin: 10rem 0;
+      color: var(--skills);
     }
   }
 
@@ -33,5 +37,36 @@
     max-width: 100%;
     height: auto;
     margin-bottom: 30rem;
+    //adding margin to the max-w and height helps reduce
+    //the size for the mobile
+  }
+
+  @include respond-to("small") {
+    flex-direction: row;
+    padding: 60rem 120rem;
+    justify-content: space-between;
+
+    &__child1 {
+      margin: 50rem 40rem;
+
+      h1 {
+        font-size: 50rem;
+      }
+
+      p {
+        font-size: 18rem;
+        margin: 20rem 0;
+
+        br {
+          display: unset;
+        }
+      }
+
+      button {
+        border-radius: 8rem;
+        padding: 20rem 40rem;
+        margin: 35rem 0;
+      }
+    }
   }
 }

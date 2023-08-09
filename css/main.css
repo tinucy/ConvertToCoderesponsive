@@ -779,20 +779,22 @@ h1 {
   flex-direction: column;
   margin: 40rem 0rem;
   background-color: var(--skills);
-  color: var(--best);
 }
 .virtualcard__child1 {
   margin: 40rem 40rem;
+  color: var(--best);
 }
 .virtualcard__child1 h1 {
   font-family: "Rasa Bold";
   font-size: 25rem;
-  color: var(--best);
 }
 .virtualcard__child1 p {
   font-family: "Inter Medium";
   font-size: 12rem;
   margin: 20rem 0;
+}
+.virtualcard__child1 p br {
+  display: none;
 }
 .virtualcard__child1 button {
   background-color: var(--elated);
@@ -800,10 +802,36 @@ h1 {
   border-radius: 8rem;
   padding: 8rem 15rem;
   margin: 10rem 0;
+  color: var(--skills);
 }
 .virtualcard__child2 {
   padding: 10rem 30rem;
   max-width: 100%;
   height: auto;
   margin-bottom: 30rem;
+}
+@media (min-width: 767px) {
+  .virtualcard {
+    flex-direction: row;
+    padding: 60rem 120rem;
+    justify-content: space-between;
+  }
+  .virtualcard__child1 {
+    margin: 50rem 40rem;
+  }
+  .virtualcard__child1 h1 {
+    font-size: 50rem;
+  }
+  .virtualcard__child1 p {
+    font-size: 18rem;
+    margin: 20rem 0;
+  }
+  .virtualcard__child1 p br {
+    display: unset;
+  }
+  .virtualcard__child1 button {
+    border-radius: 8rem;
+    padding: 20rem 40rem;
+    margin: 35rem 0;
+  }
 }/*# sourceMappingURL=main.css.map */
