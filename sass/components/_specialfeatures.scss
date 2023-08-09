@@ -42,22 +42,18 @@
         display: flex;
         justify-content: space-between;
 
-        // &--2 {
-        //   box-shadow: 4rem 3rem var(--skills);
-        //   // border-radius: 10rem;
-        //   // margin: 20rem 70rem;
-        //   // padding: 50rem 70rem;
-        //   // font-size: 50rem;
+        &--2 {
+          box-shadow: 4rem 3rem var(--skills);
+          border-radius: 10rem;
+          // // margin: 20rem 70rem;
+          // // padding: 50rem 70rem;
+          // // font-size: 50rem;
 
-        //   box-shadow: 4rem 3rem var(--skills);
-        //   border-radius: 10rem;
-
-        //   align-items: center;
-        //   margin: 20rem 70rem;
-        //   padding: 10rem 10rem;
-        //   width: 70%;
-        //   font-size: 15rem;
-        // }
+          // margin: 20rem 70rem;
+          // padding: 10rem 10rem;
+          // width: 70%;
+          // font-size: 15rem;
+        }
       }
     }
   }

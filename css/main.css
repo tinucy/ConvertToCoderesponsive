@@ -6,6 +6,7 @@
   --excited: #b89fff;
   --elated: #c39bf4;
   --ayo: #e1e1e1;
+  --best: #ffffff;
 }
 
 @font-face {
@@ -767,4 +768,42 @@ h1 {
     display: flex;
     justify-content: space-between;
   }
+  .special__all .special__all--big--2 {
+    box-shadow: 4rem 3rem var(--skills);
+    border-radius: 10rem;
+  }
+}
+
+.virtualcard {
+  display: flex;
+  flex-direction: column;
+  margin: 40rem 0rem;
+  background-color: var(--skills);
+  color: var(--best);
+}
+.virtualcard__child1 {
+  margin: 40rem 40rem;
+}
+.virtualcard__child1 h1 {
+  font-family: "Rasa Bold";
+  font-size: 25rem;
+  color: var(--best);
+}
+.virtualcard__child1 p {
+  font-family: "Inter Medium";
+  font-size: 12rem;
+  margin: 20rem 0;
+}
+.virtualcard__child1 button {
+  background-color: var(--elated);
+  font-family: "Inter Bold";
+  border-radius: 8rem;
+  padding: 8rem 15rem;
+  margin: 10rem 0;
+}
+.virtualcard__child2 {
+  padding: 10rem 30rem;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30rem;
 }/*# sourceMappingURL=main.css.map */

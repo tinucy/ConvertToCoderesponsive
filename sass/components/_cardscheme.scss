@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--excited);
+    //padding: 0 40rem;
   }
 
   @include respond-to("small") {
