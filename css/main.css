@@ -774,6 +774,84 @@ h1 {
   }
 }
 
+.review__all--h {
+  font-family: "Rasa Bold";
+  font-size: 20rem;
+  padding: 10rem 40rem;
+}
+.review__all--p {
+  font-family: "Inter Medium";
+  color: var(--joy);
+  padding: 2rem 40rem;
+  font-size: 12rem;
+}
+
+.review__all--cards {
+  border: 2rem var(--skills) solid;
+  box-shadow: 2rem 2rem var(--skills);
+  margin: 20rem 40rem;
+  padding: 5rem 0 10rem 10rem;
+  flex-direction: row-reverse;
+  border-radius: 7rem;
+}
+.review__all--cards h2 {
+  font-family: "Inter SemiBold";
+  -moz-columns: var(--light);
+       columns: var(--light);
+}
+.review__all--cards p {
+  font-family: "Inter Medium";
+  color: var(--skills);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  font-size: 10rem;
+}
+.review__all--cards--color {
+  border: 2rem var(--skills) solid;
+  box-shadow: 2rem 2rem var(--skills);
+  margin: 20rem 40rem;
+  padding: 5rem 0 10rem 10rem;
+  background-color: var(--excited);
+  border-radius: 7rem;
+}
+.review__all--cards--color h2 {
+  font-family: "Inter SemiBold";
+  -moz-columns: var(--light);
+       columns: var(--light);
+}
+.review__all--cards--color p {
+  font-family: "Inter Medium";
+  color: var(--skills);
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  font-size: 10rem;
+}
+
+@media (min-width: 767px) {
+  .review__all--h {
+    font-size: 50rem;
+  }
+  .review__all--p {
+    font-size: 15rem;
+  }
+  .review__all--child {
+    display: flex;
+  }
+  .review__all--child--color {
+    box-shadow: 2rem 2rem var(--skills);
+    margin: 20rem 40rem;
+    padding: 5rem 0 20rem 20rem;
+    border-radius: 10rem;
+  }
+  .review__all .review__all--cards {
+    border: 2rem var(--skills) solid;
+    box-shadow: 2rem 2rem var(--skills);
+    margin: 20rem 40rem;
+    padding: 5rem 0 10rem 10rem;
+    flex-direction: row-reverse;
+    border-radius: 7rem;
+  }
+}
 .virtualcard {
   display: flex;
   flex-direction: column;
