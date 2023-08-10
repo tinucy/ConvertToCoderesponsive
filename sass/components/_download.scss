@@ -1,0 +1,76 @@
+.download {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25rem;
+  background-color: var(--excited);
+
+  &--p1 {
+    font-family: "Rasa Bold";
+    font-size: 20rem;
+    padding-left: 80rem;
+    //justify-items: center;
+  }
+
+  &--p2 {
+    font-family: "Inter Medium";
+    font-size: 10rem;
+    //justify-items: center;
+    padding: 20rem 20rem;
+
+    br {
+      display: none;
+    }
+  }
+
+  span {
+    //display: flex;
+
+    .download__but {
+      padding: 10rem 100rem;
+      max-width: 100%;
+      height: auto;
+      //margin-bottom: 30rem;
+    }
+
+    .download__but2 {
+      padding: 0rem 90rem;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30rem;
+    }
+  }
+
+  @include respond-to("small") {
+    display: flex;
+    padding-top: 100rem;
+
+    &--p1 {
+      font-size: 50rem;
+      padding-left: 500rem;
+      //justify-items: center;
+    }
+
+    &--p2 {
+      font-size: 18rem;
+      //justify-items: center;
+      padding: 20rem 450rem;
+
+      br {
+        display: unset;
+      }
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      //align-content: center;
+      .download__but {
+        padding-right: 0;
+      }
+
+      .download__but2 {
+        padding-left: 0;
+      }
+    }
+  }
+}
