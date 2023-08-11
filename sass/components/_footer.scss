@@ -1,5 +1,6 @@
 .footer {
   display: flex;
+  flex-direction: column;
   background-color: var(--skills);
   padding: 30rem 40rem;
   color: var(--best);
@@ -49,13 +50,15 @@
           font-family: "Inter Bold";
           font-size: 12rem;
           padding: 5rem 10rem;
-          transform: translate(135rem, -33rem);
+          transform: translate(135rem, -34rem);
+          box-shadow: 2rem 2rem var(--skills);
         }
       }
     }
 
     &--moreInfo {
       display: flex;
+      //flex-direction: column;
       justify-content: space-around;
 
       &--1 {
@@ -78,13 +81,77 @@
 
   &__2 {
     padding-top: 50rem;
-    margin: 0;
+
     p {
       font-family: "Inter Medium";
-      font-size: 15rem;
+      font-size: 12rem;
+      padding-left: 30rem;
+      padding-bottom: 30rem;
     }
   }
 
   @include respond-to("small") {
+    padding: 120rem 180rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    .footer__1 {
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+
+      &__a {
+        display: flex;
+        flex-direction: column;
+
+        &--logo {
+          display: flex;
+          justify-content: flex-start;
+          // align-items: center;
+
+          p {
+            font-size: 40rem;
+          }
+        }
+
+        .input__but {
+          padding: 0 20rem;
+
+          input {
+            border-radius: 18rem;
+            height: 55rem;
+            max-width: 400rem;
+            padding: 35rem 80rem;
+          }
+
+          ::placeholder {
+            font-size: 15rem;
+          }
+
+          button {
+            border-radius: 10rem;
+            font-size: 15rem;
+            padding: 15rem 20rem;
+            transform: translate(-136rem, 0rem);
+            box-shadow: 4rem 3rem var(--skills);
+          }
+        }
+      }
+
+      &--moreInfo {
+        display: flex;
+        flex-direction: comp;
+        // align-items: baseline;
+        // padding-left: 100rem;
+        // gap: 50rem;
+      }
+    }
+
+    .footer__2 {
+      p {
+        padding: 30rem 350rem;
+        font-size: 20rem;
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@
   max-width: 895rem;
   margin: 50rem auto;
   padding: 0;
-  background-color: salmon;
+  // background-color: salmon;
 
   @include respond-to("small") {
     max-width: 1500rem;
